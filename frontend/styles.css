@@ -1,0 +1,61 @@
+body {
+  background: #0F172A;
+  font-family: Inter, sans-serif;
+  color: #E5E7EB;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+}
+
+.status {
+  background: #16A34A;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 30px;
+}
+
+.card {
+  background: #111827;
+  padding: 25px;
+  border-radius: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #020617;
+  color: white;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background: #2563EB;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#chatBox p {
+  margin: 6px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748B;
+}
