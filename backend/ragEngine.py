@@ -5,10 +5,13 @@ from pypdf import PdfReader
 from sentence_transformers import SentenceTransformer
 from google import genai
 import google.generativeai as genai
+import dotenv
+import os
 
+dotenv.load_dotenv()
 
 try:
-    genai.configure(api_key="AIzaSyDpfI3Z-5I_Zy4HDJ2lslnHekOiwUBm_hw")
+    genai.configure(api_key=os.getenv("API_KEY"))
     print("API key configuration successful.")
 except Exception as e:
     print(f"API key configuration failed: {e}")
