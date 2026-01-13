@@ -1,5 +1,4 @@
 import logging
-import numpy as np
 import faiss
 from pypdf import PdfReader
 from sentence_transformers import SentenceTransformer
