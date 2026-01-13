@@ -52,3 +52,8 @@ def chat_with_docs(q: Query):
         "answer": answer,
         "sources": [{"page": page} for _, page in refs]
     }
+
+
+@app.get("/")
+def healthCheck():
+    return{"Site is up."}
