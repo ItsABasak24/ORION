@@ -56,4 +56,4 @@ def chat_with_docs(q: Query):
 
 @app.get("/")
 def healthCheck():
-    return{"Site is up."}
+    return{"Health": "OK"}
