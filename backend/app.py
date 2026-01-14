@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from backend.ragEngine import ragEngine, search, chat
+from ragEngine import ragEngine, search, chat
 import os
 import dotenv
 
@@ -20,8 +20,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PDF_PATH = os.path.join(BASE_DIR, "data", "hr.pdf")
+PDF_PATH =  ("data/hr.pdf")
 GEMINI_API_KEY = os.getenv("API_KEY")
 
 ragState = ragEngine(PDF_PATH, GEMINI_API_KEY)
